@@ -277,4 +277,8 @@ nav {
   .ContactForm {
     margin: 10px 20px;
   }
+
+  .ContactForm-Input {
+    height: 50px;
+  }
 }
