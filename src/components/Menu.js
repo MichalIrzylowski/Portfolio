@@ -17,10 +17,8 @@ export default class Menu extends Component {
   render() {
     return (
       <nav>
-        <div className='h1-hamburger'>
-          <h1>Michał Irzyłowski</h1>
-          <HamburgerIcon />
-        </div>
+        <h1>Michał Irzyłowski</h1>
+        <HamburgerIcon />
         <ul className='Menu'>
           <li className={this.state.activeItem === 'About' ? 'Menu-item active' : 'Menu-item'} onClick={() => this.handleClick('About')}><Link to='/'>O mnie</Link></li>
           <li className={this.state.activeItem === 'Projects' ? 'Menu-item active' : 'Menu-item'} onClick={() => this.handleClick('Projects')}><Link to='/Projects'>Projekty</Link></li>

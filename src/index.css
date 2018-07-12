@@ -202,13 +202,7 @@ nav {
 
 @media screen and (max-width: 900px) {
   nav {
-    flex-direction: column;
     width: 100%;
-    justify-content: space-around;
-  }
-
-  .h1-hamburger {
-    display: flex;
     justify-content: space-around;
   }
 
@@ -226,6 +220,7 @@ nav {
 
   .Clicked ~ .Menu {
     display: block;
+    width: 100%;
   }
 
   .Clicked .HamburgerIcon-1 {
