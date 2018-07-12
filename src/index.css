@@ -1,0 +1,270 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  background-color: #fefefe;
+  letter-spacing: 1px;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  border-bottom: 2px solid #52c41a;
+}
+
+.HamburgerIcon-wrapper {
+  display: none
+}
+
+.HamburgerIcon {
+  background-color: black;
+  width: 30px;
+  height: 3px;
+  border-radius: 1px;
+  transition: .2s ease-out;
+}
+
+.HamburgerIcon-2 {
+  margin: 5px 0;
+}
+
+.Menu {
+  display: flex;
+  list-style-type: none;
+}
+
+.Menu-item {
+  margin: 0 10px;
+}
+
+.Menu-item a:hover{
+  color: #52c41a;
+  transition: .2s;
+}
+
+.Menu-item.active a {
+  color: #52c41a;
+}
+
+.Menu a {
+  color: black;
+  text-decoration: none;
+}
+
+.MainContent {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 3fr 8fr;
+}
+
+.Card {
+  grid-column: 1 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 20px 20px 0 0;
+}
+
+.profileImage {
+  display: block;
+  border: 10px solid #52c41a;
+  border-radius: 50%;
+  width: 387.7px;
+  height: 387.7px;
+}
+
+.Informations {
+  grid-column: 2 3;
+  margin: 20px 0 0 20px;
+}
+
+.LogoList, .logo {
+  display: flex;
+}
+
+.LogoList {
+  margin: 20px 0;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.logo {
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 30px;
+  justify-content: space-between;
+}
+
+.logo-img {
+  width: 150px;
+}
+
+.ProjectList {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.ProjectCard {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+  height: 350px;
+  border: 2px solid #52c41a;
+  border-radius: 1px;
+  margin: 0 30px;
+  margin-bottom: 20px;
+}
+
+.ProjectCard-Img {
+  width: 100%;
+}
+
+.ProjectCard-Description {
+  padding: 0 15px;
+}
+
+.ContactForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.ContactForm-Label {
+  margin-bottom: 10px;
+}
+
+.ContactForm-Input {
+  height: 30px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  transition: .1s;
+  font-size: 18px;
+  font-family: 'Pacifico', sans-serif;
+}
+
+.ContactForm-Input:focus {
+  outline: none;
+  border-bottom: 3px solid #52c41a;
+}
+
+.ContactForm-Submit {
+  width: 50%;
+  background-color: #52c41a;
+  border: 1px solid #52c41a;
+  border-radius: 2px;
+  color: #fefefe;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  padding: 5px;
+  align-self: center;
+}
+
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 250ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+  z-index: 0
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transition: opacity 0ms ease-in;
+}
+
+@media screen and (max-width: 900px) {
+  nav {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .Menu {
+    display: none;
+  }
+
+  .Card {
+    margin: 10px 0;
+  }
+
+  .HamburgerIcon-wrapper {
+    display: block;
+  }
+
+  .Clicked ~ .Menu {
+    display: block;
+  }
+
+  .Clicked .HamburgerIcon-1 {
+    position: relative;
+    top: 10px;
+    transform: rotate(45deg);
+  }
+
+
+  .Clicked .HamburgerIcon-2 {
+    opacity: 0;
+  }
+
+  .Clicked .HamburgerIcon-3 {
+    position: relative;
+    bottom: 6px;
+    transform: rotate(-45deg);
+  }
+
+  .Informations {
+    margin: 0;
+  }
+
+  .ProjectCard {
+    width: 100%;
+    margin: 10px;
+  }
+
+  .Card-Item {
+    align-self: flex-start;
+    margin: 10px 30px;
+  }
+
+  .MainContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profileImage {
+    width: 150px;
+    height: 150px;
+  }
+
+  .ContactForm {
+    margin: 10px 20px;
+  }
+}
