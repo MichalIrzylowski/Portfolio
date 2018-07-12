@@ -210,6 +210,11 @@ nav {
     display: none;
   }
 
+  .Menu-item {
+    margin-right: 60px;
+    text-align: right;
+  }
+
   .Card {
     margin: 10px 0;
   }
@@ -221,7 +226,6 @@ nav {
   .Clicked ~ .Menu {
     display: block;
     width: 100%;
-    justify-content: flex-end;
   }
 
   .Clicked .HamburgerIcon-1 {
