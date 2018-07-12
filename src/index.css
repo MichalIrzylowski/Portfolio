@@ -243,6 +243,10 @@ nav {
     margin: 0;
   }
 
+  .About {
+    padding: 0 30px;
+  }
+
   .ProjectCard {
     width: 100%;
     margin: 10px;

@@ -27,9 +27,9 @@ const logos = [{
 const About = () => (
   <div className='Informations About'>
     <h3>Cześć!</h3>
-      <p>Mam na imię Michał, z wykształcenia jestem chemikiem analitykiem. Obecnie pracuję w jednej z najbardziej rozwijającej się firmie biotechnologicznej w Polsce.</p>
-      <p>Około rok temu postanowiłem rozwinąć jedną ze swoich pasji, którą jest programowanie. W wolnych chwilach uczę się programowania i pielęgnuję drugą z moich pasji, którą jest kolarstwo szosowe.</p>
-      <p>Sprawnie czuję się w React, Redux, React-Router, Node.js, ES6, CSS3 i HTML5. Obecnie szukam pracy jako <strong>Front-end developer</strong> (z nastawieniem na React) albo <strong>Full-Stack developer</strong> W dalszych planach mam zamiar nauczyć się Webpacka oraz innego języka programowania (np.: Python albo Java).</p>
+      <p>Mam na imię Michał, z wykształcenia jestem chemikiem analitykiem. Obecnie pracuję w jednej z najszybciej rozwijającej się firmie biotechnologicznej w Polsce.</p>
+      <p>Około roku temu postanowiłem rozwinąć jedną ze swoich pasji, którą jest programowanie. W wolnych chwilach uczę się programowania i pielęgnuję drugą z moich pasji, którą jest kolarstwo szosowe.</p>
+      <p>Brdzo dobrze czuję się w React, Redux, React-Router, Node.js, ES6, CSS3 i HTML5. Obecnie szukam pracy jako <strong>Front-end developer</strong> (z nastawieniem na React) albo <strong>Full-Stack developer</strong> W dalszych planach mam zamiar nauczyć się Webpacka oraz innego języka programowania (np.: Python albo Java).</p>
 
       <LogoList logos={logos} />
   </div>
