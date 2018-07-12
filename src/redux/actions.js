@@ -6,7 +6,7 @@ import {SEND_MESSAGE_REQUEST,
 export const sendMessage = (body) => (
   {
     [CALL_API]: {
-        endpoint: "/api/message",
+        endpoint: "https://portfolio-mirzylowski-server.herokuapp.com/api/message",
         method: "POST",
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(body),
