@@ -221,6 +221,7 @@ nav {
   .Clicked ~ .Menu {
     display: block;
     width: 100%;
+    justify-content: flex-end;
   }
 
   .Clicked .HamburgerIcon-1 {
