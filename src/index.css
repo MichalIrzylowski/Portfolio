@@ -216,11 +216,13 @@ nav {
 
   .Menu {
     display: none;
+    margin: none;
   }
 
   .Menu-item {
-    margin-right: 60px;
+    margin-right: 10%;
     text-align: right;
+    font-size: 24px;
   }
 
   .Card {
