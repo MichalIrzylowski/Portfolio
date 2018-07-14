@@ -34,14 +34,14 @@ function loadedProjects (state = initialState, action) {
   }
 };
 
-function messageSent (state = {}, action) {
+function messageSent (state = {loading: false}, action) {
   switch (action.type) {
     case SEND_MESSAGE_REQUEST:
       return {loading: true};
     case SEND_MESSAGE_SUCCES:
       return {loading: false, message: action.payload.message};
     case SEND_MESSAGE_FAILURE:
-      return {loading: false, message: action.payload.message}
+      return {loading: false, error: action.payload.message}
     default:
       return state;
   }
