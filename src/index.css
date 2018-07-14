@@ -93,6 +93,10 @@ nav {
   margin: 20px 0 0 20px;
 }
 
+.About-Header {
+  font-size: 24px;
+}
+
 .LogoList, .logo {
   display: flex;
 }
@@ -181,7 +185,7 @@ nav {
 }
 
 .MessageFeedback {
-  
+  text-align: center;
 }
 
 .fade-enter {
