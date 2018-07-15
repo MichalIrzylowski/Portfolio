@@ -27,7 +27,7 @@ const logos = [{
 const About = () => (
   <div className='Informations About'>
     <p className='About-Header'><b>Cześć!</b></p>
-      <p>Mam na imię Michał i chcę zostać programistą webowym. Z wykształcenia jestem chemikiem i obecnie pracuję jako chemik analityk w jednej z najszybciej rozwijającej się firmie biotechnologicznej w Polsce.</p>
+      <p>Mam na imię Michał i chcę zostać programistą webowym. Z wykształcenia jestem chemikiem i obecnie pracuję jako chemik analityk w jednej z najszybciej rozwijających się firm biotechnologicznych w Polsce.</p>
       <p>Około półtora roku temu postanowiłem rozwinąć swoje zainteresowanie, którym jest programowanie (którym interesuję się od zawsze). Naukę zacząłem od C++. Szybko okazało się, że bardziej interesuje mnie programowanie webowe. W końcu zacząłem tworzyć proste strony w HTML i CSS.</p>
       <p>Po opanowaniu podstaw tych języków naturalnym krokiem była nauka JavaScriptu. Po poznaniu podstaw JS'a doszedłem do wniosku, że właśnie tym chcę zajmować się w życiu.</p>
       <p>Swobodnie czuję się w React, Redux, React-Router, Node.js, ES6, CSS3 i HTML5. Obecnie szukam pracy jako <strong>Front-end developer</strong> (z nastawieniem na React) albo <strong>Full-Stack developer</strong>.</p>
