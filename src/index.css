@@ -230,7 +230,7 @@ nav {
 }
 
 .ProjectCard:hover .ProjectCard-Title a {
-  color: blue;
+  color: #096dd9;
 }
 
 .ContactForm {
