@@ -1,11 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 //import getSelectedProject from '../selectors';
 
 const Project = ({selectedProject}) =>{
   return (
     <div className='Selected-Project-Wrapper'>
       <div className='Selected-Project'>
+        <Link to='/Projects'></Link>
         <img className='Selected-Project-Img' src={selectedProject.bigImgUrl} alt={selectedProject.title} />
         <div>
           <h3>{selectedProject.title}</h3>
