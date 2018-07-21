@@ -8,7 +8,8 @@ import { APP_INIT,
          FETCH_PROJECTS_REQUEST,
          SEND_MESSAGE_REQUEST,
          SEND_MESSAGE_SUCCES,
-         SEND_MESSAGE_FAILURE } from './ActionTypes';
+         SEND_MESSAGE_FAILURE/*,
+         SELECT_PROJECT*/ } from './ActionTypes';
 
 const getProjectsList = () => ({
   [CALL_API]: {
@@ -35,7 +36,7 @@ function* appInitiated () {
 export default function* rootSaga () {
   yield takeEvery(APP_INIT, appInitiated);
   while(true) {
-    yield take(SEND_MESSAGE_REQUEST);
+    yield take([SEND_MESSAGE_REQUEST/*, SELECT_PROJECT*/]);
     yield take([SEND_MESSAGE_SUCCES, SEND_MESSAGE_FAILURE]);
   }
 }

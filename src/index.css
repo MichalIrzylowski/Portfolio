@@ -159,14 +159,14 @@ nav {
 .logo-img {
   width: 150px;
   position: relative;
-  -webkit-transition: .1s ease-in;
-  transition: .1s ease-in;
+/*  -webkit-transition: .1s ease-in;
+  transition: .1s ease-in;*/
 }
 
-.logo:hover .logo-img {
+/*.logo:hover .logo-img {
   -webkit-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
-}
+}*/
 
 .ProjectList {
   display: -webkit-box;
@@ -208,6 +208,29 @@ nav {
 
 .ProjectCard-Description {
   padding: 0 15px;
+}
+
+.ProjectCard-Title {
+  -webkit-transition: .1s ease-in;
+  transition: .1s ease-in;
+}
+.ProjectCard-Title a {
+  color: black;
+  text-decoration: none;
+/*  -webkit-transition: .1s ease-in;
+  transition: .1s ease-in;*/
+}
+/*.ProjectCard-Title:hover a {
+  color: blue;
+}*/
+
+.ProjectCard:hover .ProjectCard-Title {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+.ProjectCard:hover .ProjectCard-Title a {
+  color: blue;
 }
 
 .ContactForm {
@@ -258,6 +281,14 @@ nav {
 
 .MessageFeedback {
   text-align: center;
+}
+
+.Selected-Project-Wrapper {
+  margin-top: 20px;
+}
+
+.Selected-Project-Img {
+  width: 100%;
 }
 
 .fade-enter {

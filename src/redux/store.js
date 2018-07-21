@@ -6,7 +6,8 @@ import { APP_INIT,
          FETCH_PROJECTS_FAILURE,
          SEND_MESSAGE_REQUEST,
          SEND_MESSAGE_SUCCES,
-         SEND_MESSAGE_FAILURE } from './ActionTypes';
+         SEND_MESSAGE_FAILURE,
+         SELECT_PROJECT} from './ActionTypes';
 
 const initialState = {loading: true}
 
@@ -47,8 +48,18 @@ function messageSent (state = {loading: false}, action) {
   }
 }
 
+/*function selectedProject (state = {}, action) {
+  switch (action.type) {
+    case SELECT_PROJECT:
+      return {project: action.id}
+    default:
+      return state;
+  }
+}*/
+
 export default combineReducers({
   didAppLoad,
   loadedProjects,
-  messageSent
+  messageSent/*,
+  selectedProject*/
 })

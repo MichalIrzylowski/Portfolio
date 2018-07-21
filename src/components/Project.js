@@ -1,17 +1,26 @@
 import React from 'react';
 import { connect } from 'react-redux';
-//import selectedProject from '../selectors';
+//import getSelectedProject from '../selectors';
 
-const Project = () => (
-  <div>
-    Project will be here
-  </div>
-)
+const Project = ({selectedProject}) =>{
+  return (
+    <div className='Selected-Project-Wrapper'>
+      <div className='Selected-Project'>
+        <img className='Selected-Project-Img' src={selectedProject.bigImgUrl} alt={selectedProject.title} />
+        <div>
+          <h3>{selectedProject.title}</h3>
+          {selectedProject.description}
+        </div>
+    </div>
+    </div>
+  )
+}
 
-/*function mapStateToProps (state) {
+
+function mapStateToProps (state, ownProps) {
   return {
-    selectedProject
+    selectedProject: state.loadedProjects.projects.find( p => p.id === +ownProps.match.params.id)
   }
-}*/
+}
 
-export default connect(/*mapStateToProps*/)(Project);
+export default connect(mapStateToProps)(Project);
