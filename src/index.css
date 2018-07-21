@@ -283,12 +283,48 @@ nav {
   text-align: center;
 }
 
+.Selected-Project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .Selected-Project-Wrapper {
   margin-top: 20px;
 }
 
 .Selected-Project-Img {
   width: 100%;
+}
+
+.Selected-Project-Description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  top: -40px;
+  width: 70%;
+  background-color: #fefefe;
+  z-index: 1;
+}
+
+.Selected-Project-Description {
+  padding: 10px;
+  text-align: justify;
 }
 
 .fade-enter {

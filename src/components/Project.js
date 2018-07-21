@@ -7,11 +7,11 @@ const Project = ({selectedProject}) =>{
   return (
     <div className='Selected-Project-Wrapper'>
       <div className='Selected-Project'>
-        <Link to='/Projects'></Link>
+        <Link to='/Projects'><i class="fas fa-arrow-left"></i> Powrót do projektów</Link>
         <img className='Selected-Project-Img' src={selectedProject.bigImgUrl} alt={selectedProject.title} />
-        <div>
+        <div className='Selected-Project-Description'>
           <h3>{selectedProject.title}</h3>
-          {selectedProject.description}
+          <p>{selectedProject.description}</p>
         </div>
     </div>
     </div>
