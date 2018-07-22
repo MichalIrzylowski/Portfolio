@@ -222,12 +222,18 @@ a {
 .ProjectCard-Title a {
   color: black;
   text-decoration: none;
-/*  -webkit-transition: .1s ease-in;
-  transition: .1s ease-in;*/
+  -webkit-transition: .1s ease-in;
+  transition: .1s ease-in;
 }
 /*.ProjectCard-Title:hover a {
   color: blue;
 }*/
+
+.ProjectCard-Title a:focus {
+  color: #096dd9;
+  text-decoration: underline;
+  font-size: 18px;
+}
 
 .ProjectCard:hover .ProjectCard-Title {
   -webkit-transform: scale(1.1, 1.1);
@@ -236,6 +242,7 @@ a {
 
 .ProjectCard:hover .ProjectCard-Title a {
   color: #096dd9;
+  text-decoration: underline;
 }
 
 .ContactForm {
