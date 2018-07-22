@@ -41,7 +41,12 @@ nav {
           align-items: baseline;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  border-bottom: 2px solid #52c41a;
+  border-bottom: 2px solid #237804;
+}
+
+a {
+  color: #096dd9;
+  text-decoration: none;
 }
 
 .HamburgerIcon-wrapper {
@@ -73,13 +78,13 @@ nav {
 }
 
 .Menu-item a:hover{
-  color: #52c41a;
+  color: #237804;
   -webkit-transition: .2s;
   transition: .2s;
 }
 
 .Menu-item.active a {
-  color: #52c41a;
+  color: #237804;
 }
 
 .Menu a {
@@ -113,7 +118,7 @@ nav {
 
 .profileImage {
   display: block;
-  border: 10px solid #52c41a;
+  border: 10px solid #237804;
   border-radius: 50%;
   width: 387.7px;
   height: 387.7px;
@@ -196,7 +201,7 @@ nav {
           align-items: center;
   width: 320px;
   height: 350px;
-  border: 2px solid #52c41a;
+  border: 2px solid #237804;
   border-radius: 1px;
   margin: 0 30px;
   margin-bottom: 20px;
@@ -258,18 +263,18 @@ nav {
   -webkit-transition: .1s;
   transition: .1s;
   font-size: 18px;
-  font-family: 'Pacifico', sans-serif;
+  font-family: /*'Pacifico'*/'Raleway', sans-serif;
 }
 
 .ContactForm-Input:focus {
   outline: none;
-  border-bottom: 3px solid #52c41a;
+  border-bottom: 3px solid #237804;
 }
 
 .ContactForm-Submit {
   width: 50%;
-  background-color: #52c41a;
-  border: 1px solid #52c41a;
+  background-color: #237804;
+  border: 1px solid #237804;
   border-radius: 2px;
   color: #fefefe;
   font-family: 'Raleway', sans-serif;
