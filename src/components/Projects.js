@@ -7,7 +7,7 @@ const Projects = ({projects}) => {
     <ProjectCard key={p.id} id={p.id} title={p.title} description={p.description} url={p.url} image={p.imgUrl} />
   ))
   return (
-    <div className='Informations ProjectList'>
+    <div className='ProjectList'>
       {projectCards}
     </div>
   )

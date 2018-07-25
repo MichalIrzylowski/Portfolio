@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
+import Card from './Card';
 import LoadingMessage from './LoadingMessage';
 import MessageFeedback from './MessageFeedback';
 import { sendMessage } from '../redux/actions';
@@ -38,17 +39,20 @@ class Contact extends Component {
     const type = this.props.messageRecieved ? 'Success' :
                  this.props.errorRecieved ? 'Error' : undefined;
     return(
-      <form className='Informations ContactForm' onSubmit={this.handleSubmit}>
-        <label className='ContactForm-Label' htmlFor='name'>Imię:</label>
-        <input className='ContactForm-Input' type='text' name='name' value={this.state.name} onChange={this.handleChange} placeholder='np.: Michał' />
-        <label className='ContactForm-Label' htmlFor='email'>e-mail:</label>
-        <input className='ContactForm-Input' type='email' name='email'  value={this.state.email} onChange={this.handleChange} placeholder='np.: przykład@przykład.pl' />
-        <label className='ContactForm-Label' htmlFor='message'>Wiadomość:</label>
-        <textarea className='ContactForm-Input' name='message' style={STYLE} value={this.state.message} onChange={this.handleChange} placeholder='Przykładowy tekst wiadomosci.' ></textarea>
-        {this.props.messageSent && <LoadingMessage />}
-        {(this.props.messageRecieved || this.props.errorRecieved) && <MessageFeedback message={message} type={type} />}
-        <input type='submit' value='Wyślij wiadomość!' className='ContactForm-Submit' />
-      </form>
+      <div className='Contact'>
+        <Card />
+        <form className='ContactForm' onSubmit={this.handleSubmit}>
+          <label className='ContactForm-Label' htmlFor='name'>Imię:</label>
+          <input className='ContactForm-Input' type='text' name='name' value={this.state.name} onChange={this.handleChange} placeholder='np.: Michał' />
+          <label className='ContactForm-Label' htmlFor='email'>e-mail:</label>
+          <input className='ContactForm-Input' type='email' name='email'  value={this.state.email} onChange={this.handleChange} placeholder='np.: przykład@przykład.pl' />
+          <label className='ContactForm-Label' htmlFor='message'>Wiadomość:</label>
+          <textarea className='ContactForm-Input' name='message' style={STYLE} value={this.state.message} onChange={this.handleChange} placeholder='Przykładowy tekst wiadomosci.' ></textarea>
+          {this.props.messageSent && <LoadingMessage />}
+          {(this.props.messageRecieved || this.props.errorRecieved) && <MessageFeedback message={message} type={type} />}
+          <input type='submit' value='Wyślij wiadomość!' className='ContactForm-Submit' />
+        </form>
+      </div>
     )
   }
 }

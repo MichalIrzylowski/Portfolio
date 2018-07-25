@@ -29,7 +29,7 @@ main {
 }
 
 nav {
-  width: 80%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -93,13 +93,13 @@ a {
 }
 
 .MainContent {
-  width: 80%;
-  display: grid;
-  grid-template-columns: 3fr 8fr;
+  width: 900px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .Card {
-  grid-column: 1 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -116,17 +116,27 @@ a {
   margin: 20px 20px 0 0;
 }
 
+.Card-Item {
+  text-align: center;
+}
+
+.first-paragraph {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.first-paragraph_text {
+  margin-left: 20px;
+}
+
 .profileImage {
   display: block;
-  border: 10px solid #237804;
+  border: 0px solid #237804;
   border-radius: 50%;
   width: 387.7px;
   height: 387.7px;
-}
-
-.Informations {
-  grid-column: 2 3;
-  margin: 20px 0 0 20px;
 }
 
 .About-Header {
@@ -162,7 +172,7 @@ a {
 }
 
 .logo-img {
-  width: 150px;
+  width: 60px;
   position: relative;
 /*  -webkit-transition: .1s ease-in;
   transition: .1s ease-in;*/
@@ -184,6 +194,7 @@ a {
           align-items: baseline;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 .ProjectCard {
@@ -199,12 +210,13 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 320px;
+  width: 260px;
   height: 350px;
-  border: 2px solid #237804;
   border-radius: 1px;
-  margin: 0 30px;
+  margin: 0 20px;
   margin-bottom: 20px;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
 }
 
 .ProjectCard-Img {
@@ -218,6 +230,7 @@ a {
 .ProjectCard-Title {
   -webkit-transition: .1s ease-in;
   transition: .1s ease-in;
+  text-align: center;
 }
 .ProjectCard-Title a {
   color: black;
@@ -235,24 +248,60 @@ a {
   font-size: 18px;
 }
 
+/*.ProjectCard-Link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  background-color: rgba(10, 10, 10, 0);
+  width: 316.8px;
+  height: 152.367px;
+  -webkit-transition: .2s ease-in;
+  transition: .2s ease-in;
+}
+
+.ProjectCard-Link a {
+  color: #fff;
+  font-size: 0;
+  -webkit-transition: .2s ease-in;
+  transition: .2s ease-in;
+}*/
+
 .ProjectCard:hover .ProjectCard-Title {
   -webkit-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
 }
+/*
+.ProjectCard:hover .ProjectCard-Link a {
+  font-size: 80px;
+}
 
+.ProjectCard:hover .ProjectCard-Link {
+  background-color: rgba(10, 10, 10, .3);
+}
+*/
 .ProjectCard:hover .ProjectCard-Title a {
   color: #096dd9;
   text-decoration: underline;
 }
 
-.ContactForm {
+.Contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+}
+
+.ContactForm {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
 }
 
 .ContactForm-Label {
@@ -287,8 +336,8 @@ a {
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
   padding: 5px;
-  -ms-flex-item-align: center;
-      align-self: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .MessageFeedback {
@@ -363,9 +412,41 @@ a {
 
 @media screen and (max-width: 900px) {
   nav {
-    width: 100%;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    width: 90%;
+  }
+
+  .first-paragraph {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .first-paragraph_text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 0;
+  }
+
+  .About-Header {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+
+  .profileImage {
+    width: 200px;
+    height: 200px;
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin-top: 20px;
   }
 
   .Menu {
@@ -411,10 +492,6 @@ a {
             transform: rotate(-45deg);
   }
 
-  .Informations {
-    margin: 0;
-  }
-
   .About {
     padding: 0 30px;
   }
@@ -430,7 +507,7 @@ a {
     margin: 10px 30px;
   }
 
-  .MainContent {
+  .MainContent, .Contact {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -441,13 +518,21 @@ a {
             flex-direction: column-reverse;
   }
 
-  .profileImage {
-    width: 150px;
-    height: 150px;
+  .ProjectCard {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .ContactForm {
-    margin: 10px 20px;
+    margin-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
   }
 
   .ContactForm-Input {
